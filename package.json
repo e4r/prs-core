@@ -1,0 +1,39 @@
+{
+  "name": "@e4r/prs-core",
+  "version": "0.1.0",
+  "description": "Phase Ratio Synthesis — core library for frequency-native microtonal composition",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "music",
+    "microtonal",
+    "tuning",
+    "psychoacoustics",
+    "phase-ratio-synthesis"
+  ],
+  "author": "Leonardo Maria Miliacca",
+  "license": "CC-BY-NC-4.0",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
